@@ -2,7 +2,7 @@
 environment: sit
 
 app:
-  name: champ-user-inquiry
+  name: champ-admin-auth
 
 server:
   port: 8080
@@ -26,6 +26,10 @@ postgres:
 redis:
   address: 172.28.241.3:6379
   database: 1
+
+email:
+  address: peerasateketanun03@gmail.com
+  subject: OTP VERIFICATION
 
 user-list-key: USER_LIST_CHAMP
 
