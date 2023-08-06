@@ -6,7 +6,7 @@ resources:
 
 images:
 - name: asia.gcr.io/poc-innovation-iot/champ-admin-auth
-  newTag: aec765b0
+  newTag: 15072ad7
 
 
 configMapGenerator:
