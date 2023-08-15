@@ -6,7 +6,7 @@ metadata:
     app.kubernetes.io/name: champ-admin-auth
     app.kubernetes.io/instance: champ-admin-auth
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app.kubernetes.io/name: champ-admin-auth
@@ -46,11 +46,11 @@ spec:
             initialDelaySeconds: 10
           resources:
             limits:
-              cpu: 400m
-              memory: 64Mi
+              cpu: 1200m
+              memory: 256Mi
             requests:
-              cpu: 200m
-              memory: 32Mi
+              cpu: 500m
+              memory: 128Mi
       volumes:
         - name: champ-admin-auth-configmap-file
           configMap:
